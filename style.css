@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Red-hat Display", sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+[id] {
+    scroll-margin-top: 192px;
+}
+
+header {
+    position: fixed;
+    top: 64px;
+    left: 10%;
+    width: 80%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #D3D3D3;
+    border-radius: 50px;
+    z-index: 99;
+}
+
+.headerLogo {
+    margin: 0 32px;
+    font-size: 18px;
+}
+
+.headerLogo a {
+    color: #BAD32C;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 32px;
+}
+
+#start {
+    background-color: #BAD32C;
+    height: 20vh;
+    padding-top: 192px;
+    border-radius: 0 0 80px 80px;
+    text-align: center;
+
+    background-image: url(media/grünDreieckFlip.svg), url(media/grünDreieck.svg), url(media/grünDreieckFlip.svg);
+    background-repeat: no-repeat;
+    background-position: 20% top, center bottom, 80% top;
+    background-size: 20vh;
+}
+
+#start h1 {
+    margin: 0;
+    font-size: 64px;
+}
+
+.resumeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#jobExperience {
+    background-color: #ECEFDE;
+    border-radius: 80px 80px 0 0;
+    text-align: end;
+    height: 35vh;
+
+    background-image: url(media/beigeHalbkreis.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40% bottom;
+}
+
+#skills {
+    background-color: #EDEFEF;
+    border-radius: 0 0 80px 80px;
+    height: 35vh;
+
+    background-image: url(media/blauHalbkreis.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 60% top;
+}
+
+#education {
+    text-align: end;
+}
+
+table {
+    width: 90%;
+    margin: 0 0 32px 5%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+dl {
+    width: 90%;
+    margin: 0 5% 24px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+h2 {
+    color: #003662;
+    font-size: 32px;
+    margin: 23px 5% 16px;
+}
+
+footer {
+    background-color: #BAD32C;
+    border-radius: 80px 80px 0 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 40px 0;
+}
+
+@media (max-width: 1300px) {
+    .headerLinks {
+        display: none;
+    }
+
+    #start {
+        background-position: 10% top, center bottom, 90% top;
+        background-size: 16vh;
+    }
+
+    #start h1 {
+        font-size: 48px;
+    }
+
+    table{
+        display: none;
+    }
+
+    #jobExperience {
+        height: fit-content;
+        background-position: center bottom;
+    }
+
+    #skills {
+        height: fit-content;
+        background-position: center top;
+    }
+}
+
+@media (min-width: 1300px) {
+    .mobileResume {
+        display: none;
+    }
+}
