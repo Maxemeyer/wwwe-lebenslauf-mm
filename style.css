@@ -37,7 +37,7 @@ header {
 }
 
 .headerLogo a {
-    color: #BAD32C;
+    color: #006AFF;
 }
 
 .headerLinks {
@@ -48,13 +48,13 @@ header {
 }
 
 #start {
-    background-color: #BAD32C;
+    background-color: #006AFF;
     height: 20vh;
     padding-top: 192px;
     border-radius: 0 0 80px 80px;
     text-align: center;
 
-    background-image: url(media/grünDreieckFlip.svg), url(media/grünDreieck.svg), url(media/grünDreieckFlip.svg);
+    background-image: url(media/blauesDreieckFlip.svg), url(media/blauesDreieck.svg), url(media/blauesDreieckFlip.svg);
     background-repeat: no-repeat;
     background-position: 20% top, center bottom, 80% top;
     background-size: 20vh;
@@ -63,6 +63,7 @@ header {
 #start h1 {
     margin: 0;
     font-size: 64px;
+    color: white;
 }
 
 .resumeContent {
@@ -120,13 +121,14 @@ dt {
 }
 
 h2 {
-    color: #003662;
+    color: #006AFF;
     font-size: 32px;
     margin: 23px 5% 16px;
 }
 
 footer {
-    background-color: #BAD32C;
+    background-color: #006AFF;
+    color: white;
     border-radius: 80px 80px 0 0;
     text-align: center;
     font-size: 24px;
@@ -167,4 +169,5 @@ footer {
     .mobileResume {
         display: none;
     }
+
 }
